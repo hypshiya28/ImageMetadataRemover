@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Metadata Remover</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <pre id="logo">
+███╗   ███╗███████╗████████╗ █████╗ ████████╗██████╗ 
+████╗ ████║██╔════╝╚══██╔══╝██╔══██╗╚══██╔══╝██╔══██╗
+██╔████╔██║█████╗     ██║   ███████║   ██║   ██████╔╝
+██║╚██╔╝██║██╔══╝     ██║   ██╔══██║   ██║   ██╔══██╗
+██║ ╚═╝ ██║███████╗   ██║   ██║  ██║   ██║   ██║  ██║
+╚═╝     ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝
+</pre>
+
+  <h1>Image Metadata Remover</h1>
+
+  <div class="container">
+    <input type="file" id="imageInput" accept="image/*" />
+    <img id="preview" style="display:none; margine-top:15px; max-width:280px; border:1px solid #00ff89; border-radius:6px;">
+    
+    <div id="metadata"></div>
+   <div id="fullMetadata" style="display:none; margin-top:15px; text-align:left; font-size:13px;"></div>
+
+    <button id="removeBtn" style="display:none;">Remove Metadata & Download</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/piexifjs"></script>
+  <script src="script.js"></script>
+</body>
+</html>
